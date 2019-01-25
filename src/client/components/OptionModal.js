@@ -16,7 +16,7 @@ const OptionModal = (props) => {
 				</div>
 				<div className="modal__body">
 				<p> {props.decision} </p>
-				<button className="button button--modal" onClick={props.close}> Ooof </button>
+				<button className="button button--modal" onClick={props.close}> I Shall Comply </button>
 				</div>
 
 			</Modal>
