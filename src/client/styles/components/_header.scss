@@ -16,4 +16,11 @@
 .header__subtitle {
     font-size: $l-size;
     font-style: italic;
+    font-weight: 10;
+}
+
+@media (max-width: $mobilebreakpoint) {
+    .header {
+        margin-bottom: $m-size
+    }
 }

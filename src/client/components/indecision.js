@@ -91,7 +91,7 @@ export default class Indecision extends React.Component {
 			<div style={this.containerStyle}>
 				<OptionModal close={this.closeModal} decision={this.state.decision}/>		
 
-				<Header title = "Indecision" subtitle="Put your life in the hands of a Computer"/>
+				<Header title = "Indecision" subtitle="May the divine power of the Computer solve your all your lifes problems"/>
 
 				<div className="container">
 					<Action makeDecision={this.makeDecision} optionsSize={this.state.options.length}/>

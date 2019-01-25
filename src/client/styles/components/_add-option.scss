@@ -9,6 +9,7 @@
 
 .add-option {
     display: flex;
+    flex-direction: column;
     background-color: $primarygrey;
     padding: $s-size /2 ;
     padding-top: .6rem;
@@ -19,9 +20,23 @@
     background: $secondarygrey;
     border:none;
     border-bottom: 3px solid lighten($secondarygrey,5%);
-    margin-right: 1rem;
+ 
     color: white;
     padding-left: $m-size;
     flex-grow: 1;
     border-radius: 7px;
+    padding: $m-size;
+    margin-bottom: $s-size;
+}
+
+@media (min-width: $mobilebreakpoint) {
+    .add-option {
+        flex-direction: row;
+        
+    }
+
+    .add-option__input {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
 }
