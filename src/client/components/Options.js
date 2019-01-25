@@ -37,8 +37,8 @@ export default class Options extends React.Component {
 
 				</div>
 				
-				{this.props.options.length > 0 ? this.props.options.map((option) => <Option handleRemove={this.props.handleRemove} key={option.key} num={option.key} option={option.title}/>) :
-					<p className="widget__message"> Enter an option below to get started! </p>
+				{this.props.options.length > 0 ? this.props.options.map((option,index) => <Option handleRemove={this.props.handleRemove} key={option.key} last={index === this.props.options.length - 1}num={option.key} option={option.title}/>) :
+					<p className="widget__message" > Enter an option below to get started! </p>
 				}
 				
 			</div>

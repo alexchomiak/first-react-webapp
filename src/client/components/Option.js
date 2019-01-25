@@ -12,9 +12,9 @@ export default class Option extends React.Component {
 
 	render() {
 		return (
-			<div className="option">
+			<div className={"option" + ((this.props.last) ? " option--last" : "")} >
 				<p style={{paddingLeft:"10px"}}> {this.props.num}. {this.props.option} </p>
-				<button onClick={this.handleRemove} className="button button--delete" > X </button>
+				<button onClick={this.handleRemove} className="button button--delete"> X </button>
 			</div>
 		)
 	}
