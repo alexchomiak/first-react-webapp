@@ -1,0 +1,168 @@
+snippet rcf "react component file" b
+// REACT COMPONENT FILE
+// Filename: `!v expand("%")`
+// Date component created: `date`
+// React component: `!v expand("%:r")`
+// React version: `npm react -v`
+// Developer: Alex Chomiak
+// Computer: 2018 Macbook Pro
+
+import React, { Component } from 'react'
+import propTypes from 'prop-types'
+export default class `!v expand("%:r")` extends Component {
+	
+	constructor(props) {
+		super(props)
+	}
+	
+	//component state
+	state = {
+		
+	}
+	
+	//styling for component container div
+	containerStyle = {
+		
+	}
+
+	render() {
+		return (
+			<div style={this.containerStyle}>
+				
+			</div>
+		)
+	}
+}
+
+`!v expand("%:r")`.propTypes = {
+	
+}
+
+endsnippet
+
+snippet rcc "react component class" b
+
+class $1 extends Component {
+	constructor(props) {
+		super(props)
+
+		//component state
+		this.state = {
+			
+		}
+
+		//css styling for component container div
+		this.containerStyle = {
+			
+		}
+
+	}
+	
+	render() {
+		return (
+			<div style={this.containerStyle}>
+				
+			</div>
+		)
+	}
+}
+
+$1.propTypes = {
+	
+}
+
+endsnippet
+
+snippet rsfFile "react function file" b
+// REACT FUNCTION FILE
+// Filename: `!v expand("%")`
+// Date file created: `date`
+// External React function: `!v expand("%:r")`()
+// React version: `npm react -v`
+// Developer: Alex Chomiak
+// Computer: 2018 Macbook Pro
+
+import React from 'react'
+
+export default function `!v expand("%:r")`() {
+	return (
+
+		<div style={styles}>
+				
+		</div>
+
+	)
+}
+
+//css styling
+const styles = {
+	
+}
+
+endsnippet
+
+
+snippet rsf "react stateless functional component"
+const $1 = (props) => {
+	return (
+		<div>
+			
+		</div>
+	)
+}
+$1.defaultProps = { }
+endsnippet
+
+snippet rer "react route" i
+<Route exact path="/$1" render={props => {
+
+	return (
+		<React.Fragment>
+			
+		</React.Fragment>
+	)
+
+}} />
+endsnippet
+
+snippet rss "react setstate" 
+this.setState((prevState) => (
+	{
+		$1
+	}
+))
+endsnippet
+
+snippet jsxv "jsx variable" i
+let $1 = (
+	<div>
+		
+	</div>
+)
+
+endsnippet
+
+snippet rlink "react link" i
+<Link to="/$1"> $2 </Link>
+endsnippet
+
+snippet nreq "node module" i
+var $1 = require('$2')
+endsnippet
+
+snippet imp "import object" 
+import $1 from './$2'
+endsnippet
+
+snippet af "arrow function" i
+($1) => 
+endsnippet
+
+snippet teo "ternary operator" i
+$1 ? ($2) : ($3)
+endsnippet
+
+snippet json-var "json variable"  
+var $1 = { $2 }
+endsnippet
+
