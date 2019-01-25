@@ -4,8 +4,7 @@ $border-width : .4rem;
     background: $secondarygrey;
     margin-bottom: $xl-size;
     border: $border-width outset $primarycolor;
-    border-top-left-radius: $corners;
-    border-top-right-radius: $corners;
+    border-radius: $corners;
 }
 .widget__message {
     color: white;
@@ -20,6 +19,16 @@ $border-width : .4rem;
     color: white;
     display: flex;
     justify-content: space-between;
+    padding: .2rem 1rem;
+    padding-bottom: .5rem;
+    font-size: $m-size;
+}
+
+.widget-footer {
+    border-top: $border-width/2 groove $primarycolor;
+    background: $primarygrey;
+    color: white;
+
     padding: .2rem 1rem;
     padding-bottom: .5rem;
 }

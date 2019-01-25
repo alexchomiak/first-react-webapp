@@ -34,8 +34,14 @@
 
     padding: 0 $s-size / 2;
     border-radius: 20px;
-    margin-top: .5rem;
+    margin-top: $s-size;
     
+}
+
+
+.button--modal {
+    width: 80%;
+    font-size: $m-size * .8;
 }
 
 .button--link {

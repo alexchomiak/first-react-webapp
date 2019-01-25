@@ -31,9 +31,20 @@ export default class AddOption extends React.Component {
 		this.addOption = this.addOption.bind(this)
 	}
 
+    state = {
+        error: false
+    }
+
 	addOption(e){
 		e.preventDefault()
-		if(e.target.option.value === "") return
+		if(e.target.option.value === "") {
+            console.log('err')
+            this.setState(() => ({error: true}))
+            return;
+        }
+
+        this.setState(() => ({error: false}))
+
 		let option = {
 			key: this.props.ops.length + 1,
 			title: e.target.option.value
@@ -45,21 +56,18 @@ export default class AddOption extends React.Component {
 	}
 	
 	render() {
-		return (
+		return ( <div className="widget-footer">
 			
-	
-		<form onSubmit={this.addOption}>
-			<div style={this.containerStyle}>
-				
-					<input style={this.textBoxStyle} name="option" type="text" placeholder="Add an option..." />
-				
-				
-					<button style={{width: '15%', overflow: 'hidden', height:'35px', margin :"0 4% 0 1%"}} name="form-button"> Add Option </button>
+            {this.state.error && <p className="add-option--error"> Please enter an option to be added! </p>}
+		<form className="add-option" onSubmit={this.addOption}>
 
-
-			</div>
+                    
+					<input className="add-option__input" name="option" type="text" placeholder="Add an option..." />
+				
+				
+					<button className="button" name="form-button"> Add Option </button>
 		</form>
-						)
+		</div>)
 	}
 }
 
