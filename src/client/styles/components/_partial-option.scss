@@ -1,0 +1,10 @@
+$border-width : .4rem;
+.option {
+    display: flex;
+    justify-content: space-between;
+    padding: $s-size / 1.5 $s-size;
+    background: $secondarygrey;
+    color: white;
+    font-size: $m-size;
+    border-bottom: $border-width / 2 groove $primarycolor
+}

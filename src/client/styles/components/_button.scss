@@ -1,0 +1,46 @@
+.big-button {
+    border: none;
+    border-bottom: .6rem solid darken($secondarycolor,10%);
+    background-color: $secondarycolor;
+    color: white;
+    width: 100%;
+    margin-bottom: $m-size;
+    font-weight: bold;
+    padding: 1.8rem;
+    font-size: $l-size;
+    border-radius: 5px;
+}
+
+.big-button:disabled {
+    opacity: .5;
+}
+
+.button {
+    background: $secondarycolor;
+    border: none;
+    border-bottom: .3rem solid darken($secondarycolor,10%);
+    color: white;
+    font-weight: 500;
+    padding: $s-size;
+    border-radius: 10px;
+}
+
+.button--delete {
+    height : 2.1rem;
+    font-size: .5rem;
+    border-left: .1rem solid darken($secondarycolor,5%);
+    border-right: .1rem solid darken($secondarycolor,5%);
+    border-bottom: .1rem solid darken($secondarycolor,8%);
+
+    padding: 0 $s-size / 2;
+    border-radius: 20px;
+    margin-top: .5rem;
+    
+}
+
+.button--link {
+    color: white;
+    background: none;
+    border: none;
+    padding: 0
+}

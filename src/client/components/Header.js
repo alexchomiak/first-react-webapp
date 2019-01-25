@@ -8,22 +8,15 @@ export default class Header extends React.Component {
 			
 		}
 
-		//css styling for component container div
-		this.containerStyle = {
-			textAlign: 'center',
-			background: 'purple',
-			color: 'white',
-			margin: '1rem 6rem',
-			border: '1px groove white'
-		}
-
 	}
 	
 	render() {
 		return (
-			<div style={this.containerStyle}>
-				<h1> {this.props.title} </h1>	
-				<h3> {this.props.subtitle}</h3>
+			<div className="header">
+				<div className="container">
+				<h1 className="header__title">  {this.props.title} </h1>	
+				<h3 className="header__subtitle"> {this.props.subtitle}</h3>
+				</div>
 			</div>
 		)
 	}

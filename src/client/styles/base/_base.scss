@@ -1,0 +1,13 @@
+html {
+    font-size : 62.5%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: rgb(36,16,34);
+    background: radial-gradient(circle, rgba(36,16,34,1) 0%, rgba(48,27,50,1) 100%);
+}
+
+h1 {
+    font-size: $m-size;
+}

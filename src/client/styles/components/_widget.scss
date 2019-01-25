@@ -1,0 +1,25 @@
+$corners : .3rem;
+$border-width : .4rem;
+.widget {
+    background: $secondarygrey;
+    margin-bottom: $xl-size;
+    border: $border-width outset $primarycolor;
+    border-top-left-radius: $corners;
+    border-top-right-radius: $corners;
+}
+.widget__message {
+    color: white;
+    font-size: $m-size;
+    text-align: center;
+    padding: $s-size / 1.5;
+
+}
+.widget-header {
+    border-bottom: $border-width/2 groove $primarycolor;
+    background: $primarygrey;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem 1rem;
+    padding-bottom: .5rem;
+}

@@ -30,14 +30,16 @@ export default class Options extends React.Component {
 	
 	render() {
 		return (
-			<div style={this.containerStyle}>
-				<div style={this.buttonContainer}>
-				<p style={{flexGrow: 10}}> {this.props.options.length > 0 ? "Your options..." : "Enter an option below to get started!"} </p>
-				<button style={this.btnStyle}disabled={this.props.options.length === 0} onClick={this.props.removeAll}> Remove All </button>
+			<div >
+				<div className="widget-header">
+				<p style={{flexGrow: 10}}> {this.props.options.length > 0 ? "Your options..." : "..."} </p>
+				<button className="button button--link" disabled={this.props.options.length === 0} onClick={this.props.removeAll}> Remove All </button>
 
 				</div>
 				
-				{this.props.options.map((option) => <Option handleRemove={this.props.handleRemove} key={option.key} num={option.key} option={option.title}/>)}
+				{this.props.options.length > 0 ? this.props.options.map((option) => <Option handleRemove={this.props.handleRemove} key={option.key} num={option.key} option={option.title}/>) :
+					<p className="widget__message"> Enter an option below to get started! </p>
+				}
 				
 			</div>
 		)

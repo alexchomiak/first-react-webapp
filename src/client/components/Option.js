@@ -30,9 +30,9 @@ export default class Option extends React.Component {
 
 	render() {
 		return (
-			<div style={this.containerStyle}>
-				<p style={{flexGrow: '10'}}> {this.props.num}. {this.props.option} </p>
-				<button onClick={this.handleRemove} style={this.btnStyle}> X </button>
+			<div className="option">
+				<p > {this.props.num}. {this.props.option} </p>
+				<button onClick={this.handleRemove} className="button button--delete" > X </button>
 			</div>
 		)
 	}

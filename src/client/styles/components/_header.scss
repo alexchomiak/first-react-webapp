@@ -1,0 +1,19 @@
+.header {
+    text-align: center;
+    margin: $s-size $s-size;
+    margin-bottom: $xl-size;
+    color: white;
+    padding:1rem 0;
+    background-color: $primarygrey;
+    border: .3rem outset $primarycolor;
+    border-radius: 1.6rem;
+}
+
+.header__title {
+    font-size : $xl-size;
+    margin: 0;
+}
+.header__subtitle {
+    font-size: $l-size;
+    font-style: italic;
+}

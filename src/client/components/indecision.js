@@ -15,7 +15,7 @@ import OptionModal from './OptionModal.js'
 export default class Indecision extends React.Component {
 	constructor(props) {
 		super(props)
-
+		
 		//component state
 		this.state = {
 			options : [],
@@ -89,11 +89,17 @@ export default class Indecision extends React.Component {
 	render() {
 		return (
 			<div style={this.containerStyle}>
-				<OptionModal close={this.closeModal} decision={this.state.decision}/>				
+				<OptionModal close={this.closeModal} decision={this.state.decision}/>		
+
 				<Header title = "Indecision" subtitle="Put your life in the hands of a Computer"/>
-				<Action makeDecision={this.makeDecision} optionsSize={this.state.options.length}/>
-				<Options handleRemove={this.handleRemove} removeAll={this.removeAll} options={this.state.options}/>
-				<AddOption addOption={this.addOption} ops={this.state.options}/>
+
+				<div className="container">
+					<Action makeDecision={this.makeDecision} optionsSize={this.state.options.length}/>
+					<div className="widget">
+						<Options handleRemove={this.handleRemove} removeAll={this.removeAll} options={this.state.options}/>
+						<AddOption addOption={this.addOption} ops={this.state.options}/>
+					</div>
+				</div>
 			</div>
 		)
 	}

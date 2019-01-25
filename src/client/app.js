@@ -2,6 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Indecision from './components/indecision.js'
 
+import 'normalize.css/normalize.css'
+import './styles/styles.scss'
+
 /*
 const template = (<div>
 	<p> Hello World!</p>
