@@ -32,8 +32,8 @@ export default class Options extends React.Component {
 		return (
 			<div >
 				<div className="widget-header">
-				<p style={{flexGrow: 10}}> {this.props.options.length > 0 ? "Your options..." : "..."} </p>
-				<button className="button button--link" disabled={this.props.options.length === 0} onClick={this.props.removeAll}> Remove All </button>
+				<p style={{flexGrow: 10}}> {this.props.options.length > 0 ? "Thy options the Computer shall consider..." : "..."} </p>
+				{this.props.options.length > 1 && <button className="button button--link" disabled={this.props.options.length === 0} onClick={this.props.removeAll}> Remove All </button>}
 
 				</div>
 				
