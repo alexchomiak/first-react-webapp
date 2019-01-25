@@ -19,8 +19,8 @@
 .add-option__input {
     background: $secondarygrey;
     border:none;
-    border-bottom: 3px solid lighten($secondarygrey,5%);
- 
+    
+    border-bottom: .3rem solid darken($secondarycolor,10%);
     color: white;
     padding-left: $m-size;
     flex-grow: 1;
